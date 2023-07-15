@@ -4,7 +4,7 @@ public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
         //comstructor of parent class
-        super(name,4,2,7,isManual,"Racing",2);
+        super(name,4,2,5,isManual,"Racing",2);
         //Use arbitrary values for parameters which are not mentioned
 
     }
@@ -41,9 +41,6 @@ public class F1 extends Car {
         }
         else if(newSpeed<=250){
             changeGear(5);
-        }
-        else{
-            changeGear(6);
         }
         if(newSpeed > 0) {
             changeSpeed(newSpeed, getCurrentDirection());
